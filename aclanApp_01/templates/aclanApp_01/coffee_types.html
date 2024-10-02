@@ -1,0 +1,39 @@
+<!-- aclanApp_01/templates/aclanApp_01/coffee_types.html -->
+
+{% extends 'base.html' %}
+
+{% block title %}Coffee Types{% endblock %}
+
+{% block content %}
+<h1 class="mb-4">Coffee Types</h1>
+
+<div class="row">
+    <div class="col-md-4 mb-4">
+        <div class="card">
+            <img src="https://via.placeholder.com/350x200.png?text=Arabica" class="card-img-top" alt="Arabica Coffee">
+            <div class="card-body">
+                <h5 class="card-title">Arabica</h5>
+                <p class="card-text">Known for its sweet, smooth taste and complex aroma. It's the most popular coffee type worldwide.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 mb-4">
+        <div class="card">
+            <img src="https://via.placeholder.com/350x200.png?text=Robusta" class="card-img-top" alt="Robusta Coffee">
+            <div class="card-body">
+                <h5 class="card-title">Robusta</h5>
+                <p class="card-text">Has a stronger, harsher taste with a grain-like overtone and peanutty aftertaste. Contains more caffeine than Arabica.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 mb-4">
+        <div class="card">
+            <img src="https://via.placeholder.com/350x200.png?text=Liberica" class="card-img-top" alt="Liberica Coffee">
+            <div class="card-body">
+                <h5 class="card-title">Liberica</h5>
+                <p class="card-text">Known for its distinctive flavor profile, often described as fruity and woody. It's relatively rare compared to Arabica and Robusta.</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,39 @@
+<!-- aclanApp_02/templates/aclanApp_02/blog_list.html -->
+
+{% extends 'base.html' %}
+
+{% block title %}Coffee Blog{% endblock %}
+
+{% block content %}
+<h1 class="mb-4">Coffee Blog</h1>
+
+<div class="row">
+    <div class="col-md-4 mb-4">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">The Art of Coffee Cupping</h5>
+                <p class="card-text">Learn about the professional tasting technique used to evaluate coffee quality and flavor profiles.</p>
+                <a href="{% url 'blog_post' %}" class="btn btn-coffee">Read More</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 mb-4">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Sustainable Coffee Farming</h5>
+                <p class="card-text">Explore the importance of sustainable practices in coffee production and their impact on farmers and the environment.</p>
+                <a href="{% url 'blog_post' %}" class="btn btn-coffee">Read More</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 mb-4">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">The Rise of Specialty Coffee Shops</h5>
+                <p class="card-text">Discover the growing trend of specialty coffee shops and their focus on quality, origin, and brewing techniques.</p>
+                <a href="{% url 'blog_post' %}" class="btn btn-coffee">Read More</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

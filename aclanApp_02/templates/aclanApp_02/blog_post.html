@@ -1,0 +1,33 @@
+<!-- aclanApp_02/templates/aclanApp_02/blog_post.html -->
+
+{% extends 'base.html' %}
+
+{% block title %}The Art of Coffee Cupping{% endblock %}
+
+{% block content %}
+<h1 class="mb-4">The Art of Coffee Cupping</h1>
+
+<div class="row">
+    <div class="col-md-8">
+        <img src="https://via.placeholder.com/800x400.png?text=Coffee+Cupping" class="img-fluid mb-4" alt="Coffee Cupping">
+        <p>Coffee cupping is a professional tasting technique used to evaluate the quality and flavor profile of coffee. It involves deeply sniffing the coffee, then loudly slurping it so it spreads to the back of the tongue. The taster attempts to measure aspects of the coffee's taste, specifically the body (the texture or mouthfeel, such as oiliness), sweetness, acidity, flavor, and aftertaste.</p>
+        <h2>The Cupping Process</h2>
+        <ol>
+            <li>Fragrance: Smell the dry grounds</li>
+            <li>Aroma: Add hot water and smell the wet grounds</li>
+            <li>Break: Break the crust that forms on top and smell again</li>
+            <li>Taste: Slurp the coffee from a spoon</li>
+            <li>Spit: Spit out the coffee and evaluate its characteristics</li>
+        </ol>
+        <p>Cupping is an essential skill for coffee professionals, including roasters, buyers, and quality control experts. It allows them to evaluate coffee objectively and consistently, ensuring that only the highest quality beans make it to your cup.</p>
+    </div>
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">About the Author</h5>
+                <p class="card-text">John Doe is a certified Q Grader and has been working in the coffee industry for over 15 years. He regularly conducts cupping sessions and training for coffee professionals around the world.</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

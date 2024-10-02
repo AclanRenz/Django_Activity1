@@ -1,0 +1,45 @@
+<!-- aclanApp_01/templates/aclanApp_01/home.html -->
+
+{% extends 'base.html' %}
+
+{% block title %}Coffee Lovers - Home{% endblock %}
+
+{% block content %}
+<div class="jumbotron">
+    <h1 class="display-4">Welcome to Coffee Lovers</h1>
+    <p class="lead">Embark on a journey through the rich world of coffee. From bean to cup, we're here to guide you.</p>
+    <hr class="my-4">
+    <p>Discover unique coffee types, master brewing techniques, and join our community of passionate coffee enthusiasts.</p>
+    <a class="btn btn-coffee btn-lg" href="{% url 'coffee_types' %}" role="button">Explore Coffee Types</a>
+</div>
+
+<div class="row mt-5">
+    <div class="col-md-4 mb-4">
+        <div class="card h-100">
+            <div class="card-body">
+                <h2 class="card-title h4">Coffee Types</h2>
+                <p class="card-text">Explore the diverse world of coffee beans and their unique flavor profiles.</p>
+                <a href="{% url 'coffee_types' %}" class="btn btn-coffee">View Coffee Types</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 mb-4">
+        <div class="card h-100">
+            <div class="card-body">
+                <h2 class="card-title h4">Brewing Methods</h2>
+                <p class="card-text">Master various techniques to brew the perfect cup of coffee every time.</p>
+                <a href="{% url 'brewing_methods' %}" class="btn btn-coffee">Explore Brewing Methods</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 mb-4">
+        <div class="card h-100">
+            <div class="card-body">
+                <h2 class="card-title h4">Coffee Blog</h2>
+                <p class="card-text">Stay updated with the latest trends, tips, and stories from the world of coffee.</p>
+                <a href="{% url 'blog_list' %}" class="btn btn-coffee">Visit Our Blog</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

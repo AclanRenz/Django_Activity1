@@ -1,0 +1,39 @@
+<!-- aclanApp_01/templates/aclanApp_01/brewing_methods.html -->
+
+{% extends 'base.html' %}
+
+{% block title %}Brewing Methods{% endblock %}
+
+{% block content %}
+<h1 class="mb-4">Brewing Methods</h1>
+
+<div class="row">
+    <div class="col-md-4 mb-4">
+        <div class="card">
+            <img src="https://via.placeholder.com/350x200.png?text=Pour+Over" class="card-img-top" alt="Pour Over">
+            <div class="card-body">
+                <h5 class="card-title">Pour Over</h5>
+                <p class="card-text">A manual brewing method that involves pouring hot water over ground coffee in a filter. Produces a clean, flavorful cup.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 mb-4">
+        <div class="card">
+            <img src="https://via.placeholder.com/350x200.png?text=French+Press" class="card-img-top" alt="French Press">
+            <div class="card-body">
+                <h5 class="card-title">French Press</h5>
+                <p class="card-text">An immersion brewing method that steeps coarse ground coffee in hot water before pressing to separate the grounds.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 mb-4">
+        <div class="card">
+            <img src="https://via.placeholder.com/350x200.png?text=Espresso" class="card-img-top" alt="Espresso">
+            <div class="card-body">
+                <h5 class="card-title">Espresso</h5>
+                <p class="card-text">A brewing method that forces pressurized hot water through finely-ground coffee to produce a concentrated shot.</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
